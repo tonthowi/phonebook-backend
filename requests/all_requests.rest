@@ -2,15 +2,11 @@ GET http://localhost:3001/api/persons
 
 ###
 
-GET http://localhost:3001/info
+GET http://localhost:3001/api/persons/66a50b46338bc88fb06ebc69
 
 ###
 
-GET http://localhost:3001/api/persons/1
-
-###
-
-DELETE http://localhost:3001/api/persons/2
+DELETE http://localhost:3001/api/persons/66a5a3698bead574590b7a8b
 
 ###
 
@@ -18,6 +14,16 @@ POST http://localhost:3001/api/persons HTTP/1.1
 content-type: application/json
 
 {
-  "name": "John Cena",
-  "number": "112232"
+  "name": "Naiinda",
+  "number": "02-302989383"
+}
+
+###
+
+PUT http://localhost:3001/api/persons/66a50b46338bc88fb06ebc69 HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Tasasi",
+  "number": "02-2928839393"
 }

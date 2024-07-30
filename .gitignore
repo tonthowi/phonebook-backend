@@ -1,1 +1,4 @@
-/mode_modules
+/node_modules
+.env
+Dockerfile
+fly.toml
